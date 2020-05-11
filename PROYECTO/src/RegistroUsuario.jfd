@@ -1,0 +1,144 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "REGISTRO"
+			"defaultCloseOperation": 2
+			"resizable": false
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Carnet_Field"
+				"font": &Font0 new java.awt.Font( "Century Schoolbook", 0, 16 )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "Carnet_FieldKeyTyped", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 80
+				"width": 190
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Nombre_Field"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "Nombre_FieldKeyTyped", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 140
+				"width": 190
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Apellido_Field"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "Apellido_FieldKeyTyped", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 200
+				"width": 190
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Carrera_Field"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "Carrera_FieldKeyTyped", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 265
+				"width": 190
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "Contraseña_Field"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 325
+				"width": 190
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Carnet"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Nombre"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 120
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Apellido"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 180
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Carrera"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 240
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Contraseña"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 305
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Registrar"
+				"text": "Registrar"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_RegistrarActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 300
+				"y": 125
+				"width": 125
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "REGISTRARSE"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 160
+				"y": 20
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 610
+				"y": 465
+				"height": 35
+				"width": 30
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Regresar"
+				"text": "Regresar"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_RegresarActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 300
+				"y": 195
+				"width": 120
+				"height": 40
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 450, 400 )
+		} )
+	}
+}

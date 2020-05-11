@@ -1,0 +1,126 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "Categorias"
+			"defaultCloseOperation": 2
+			"resizable": false
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "CATEGORIA"
+				"font": &Font0 new java.awt.Font( "Century Schoolbook", 0, 16 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 215
+				"y": 20
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "AGREGAR"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 70
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "ELIMINAR"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 170
+				"height": 19
+				"x": 200
+				"y": 70
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "NOMBRE"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 35
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 820
+				"y": 645
+				"height": 60
+				"width": 35
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Categoria_Field"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 135
+				"width": 155
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Agregar"
+				"text": "Agregar"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_AgregarActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 175
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Eliminar_Field"
+				"font": #Font0
+				"editable": false
+				"text": "SELECCION CATEGORIA A ELIMINAR"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 205
+				"y": 135
+				"width": 350
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Eliminar"
+				"text": "Eliminar"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_EliminarActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_EliminarActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_EliminarActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 205
+				"y": 175
+				"width": 115
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "Tb_Categorias"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector )
+						add( new java.util.Vector )
+					}, new java.util.Vector, new java.util.Vector, new java.util.Vector, new java.util.Vector )
+					"font": #Font0
+					"background": new java.awt.Color( 255, 255, 255, 255 )
+					"gridColor": new java.awt.Color( 255, 51, 0, 255 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "Tb_CategoriasMouseClicked", true ) )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 220
+				"height": 165
+				"width": 535
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Regresar"
+				"text": "Regresar"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_RegresarActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 450
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 565, 430 )
+		} )
+	}
+}

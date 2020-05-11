@@ -1,0 +1,155 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"defaultCloseOperation": 2
+			"resizable": false
+			"title": "Configuracion"
+			"$sizePolicy": 1
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "CONFIGURACIONES"
+				"font": &Font0 new java.awt.Font( "Century Schoolbook", 0, 16 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 35
+				"y": 25
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Ip:"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 50
+				"y": 100
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Puerto:"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 55
+				"height": 19
+				"x": 20
+				"y": 140
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Ip_Field"
+				"font": #Font0
+				"editable": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 75
+				"y": 95
+				"width": 190
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Puerto_Field"
+				"font": #Font0
+				"editable": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 75
+				"y": 135
+				"width": 190
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Conectar"
+				"text": "Conectar"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_ConectarActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 325
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 475
+				"y": 485
+				"width": 50
+				"height": 55
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Regresar"
+				"text": "Regresar"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_RegresarActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 100
+				"y": 370
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Sincronizar"
+				"text": "Sincronizar"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_SincronizarActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 140
+				"y": 325
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "SESION:"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 65
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "Puerto:"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 60
+				"height": 19
+				"x": 20
+				"y": 275
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Ip:"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 23
+				"height": 22
+				"x": 50
+				"y": 230
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "CONECTARSE A..."
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 240
+				"height": 19
+				"x": 10
+				"y": 190
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "IpServer_Field"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 75
+				"y": 225
+				"width": 190
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "PuertoServer_Field"
+				"font": #Font0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 75
+				"y": 265
+				"width": 190
+				"height": 35
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 15 )
+			"size": new java.awt.Dimension( 280, 440 )
+		} )
+	}
+}

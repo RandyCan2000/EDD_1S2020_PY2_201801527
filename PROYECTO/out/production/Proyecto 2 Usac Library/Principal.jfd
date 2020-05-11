@@ -1,0 +1,194 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			"resizable": false
+			"title": "MENU"
+			"$sizePolicy": 1
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 675
+				"y": 405
+				"height": 55
+				"width": 45
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Perfil"
+				"text": "PERFIL"
+				"font": &Font0 new java.awt.Font( "Century Schoolbook", 0, 15 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_PerfilActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 65
+				"y": 25
+				"width": 210
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Catalogo"
+				"text": "CATALOGOS"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_CatalogoActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 65
+				"y": 100
+				"width": 210
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Categorias"
+				"text": "CATEGORIAS"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_CategoriasActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 65
+				"y": 65
+				"width": 210
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bt_Eliminacion"
+				"text": "ELIMINAR LIBROS"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_EliminacionActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 65
+				"y": 135
+				"width": 210
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "OPCIONES"
+					"font": #Font0
+					"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_AgregarUsuarios"
+						"text": "AGREGAR USUARIOS"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_AgregarUsuariosActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_AgregarLibros"
+						"text": "AGREGAR LIBROS"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_AgregarLibrosActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_Logout"
+						"text": "CERRAR SESION"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_LogoutActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_Salir"
+						"text": "SALIR"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_SalirActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_SalirActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "HERRAMIENTAS"
+					"font": #Font0
+					"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_Configuracion"
+						"text": "CONFIGURACION"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_ConfiguracionActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_Sincronizar"
+						"text": "SINCRONIZAR"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_SincronizarActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_JSONUsuarios"
+						"text": "USARIOS JSON"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_JSONUsuariosActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_JSONLibros"
+						"text": "LIBROS JSON"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_JSONLibrosActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "REPORTES"
+					"font": #Font0
+					"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_UsuariosReporte"
+						"text": "TABLA HASH"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_UsuariosReporteActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_UsuariosReporteActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_UsuariosReporteActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_CategoriasReporte"
+						"text": "CATEGORIA"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_CategoriasReporteActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_CategoriasReporteActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_RecorridosReporte"
+						"text": "RECORRIDOS"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_RecorridosReporteActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_RecorridosReporteActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_LibrosReporte"
+						"text": "ARBOL B"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_LibrosReporteActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_LibrosReporteActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_NodosReporte"
+						"text": "NODOS DE RED"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_NodosReporteActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_NodosReporteActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "Bt_BlockchainReporte"
+						"text": "BLOCKCHAIN"
+						"font": #Font0
+						"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_BlockchainReporteActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Bt_BlockchainReporteActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 15 )
+			"size": new java.awt.Dimension( 335, 245 )
+		} )
+	}
+}
